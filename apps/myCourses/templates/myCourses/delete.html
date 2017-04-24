@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Delete</title>
+</head>
+<body>
+  <h2>Are you sure you want to delete the following courses?</h2>
+  <form class="" action="/courses/delete " method="post">
+    {% csrf_token %}
+    <label for="">Name:</label>
+    <label for="">Description:</label>
+    <input type="submit" name="" value="No">
+    <input type="submit" name="" value="Yes! I am sure">
+  </form>
+</body>
+</html>
